@@ -81,14 +81,22 @@ nav{
 }
 .banner-container p{
     font-size: 2rem;
+    margin-top: 37px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 .banner-buttons button{
+    margin-top: 37px;
     padding: 10px 16px;
     border: 1px solid white;
     border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-right: 18px;
 }
 .banner-buttons :first-child{
     background-color: #E6533C;
+    border: none;
 }
 .banner-buttons :last-child{
     background-color: #1E1E1E;
