@@ -11,6 +11,7 @@
 :root{
   --secondary-text: rgba(255, 255, 255, 0.5);
   --btn-color:#e6533c;
+  --secondary-bg:rgb(34, 34, 34);
 }
 .primary-color {
   color: #e6533c;
@@ -240,28 +241,132 @@ main {
   object-fit: cover;
 }
 /* bmi-calculator  Styling */
+.bmi-main-container{
+  width: 80%;  margin: 0 auto;
+  height: 640px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  
+}
+.bmi-main-container h1{
+  font-size: 2.3rem;
+}
+.bmi-main-container p{
+  font-size: .9rem;
+  color: var(--secondary-text);
+}
 .bmi-calculator{
-  width: 80%;
-  border: 1px solid rgb(255, 255, 255);
-  margin: 0 auto;
-  margin-bottom: 40px;
+
+
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+justify-content:space-between;
 
 }
+
+
+.bmi-form{
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+
+
+
+
 .bmi-table table,th,td
 {
   border: 1px solid var(--secondary-text);
   border-collapse: collapse;text-align: center
+  
 }
 th{
-  text-align: center
+  text-align: center;
+  font-weight: 500;
+}
+td{
+  color: var(--secondary-text);
+  font-weight: 400;
 }
 .bmi-table{
   width: 400px;
   height: 300px;
+ 
+}
+/* input */
+.input-form{
+  display: grid;
+  /* grid-template-columns: 375px  375px ;
+  grid-template-rows: 50px 50px 50px 50px; */
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-gap: 16px;
+  grid-template-areas: 
+
+  "height kg"
+  "age sex"
+  "activity activity"
+  "submit empty";
+
+  
+  
+}
+.input-form input,select,option{
+  background-color: #3a3a3a;
+  border: none;
+  color: var(--secondary-text);
+  padding-left: 20px;
+  border-radius: 10px;font-size: 1rem;
+
+font-weight: 400;}
+.height-in{
+grid-area: height;
+}
+
+.kg-in{
+  grid-area:kg;
+}
+.age-in{
+  grid-area:age;
+}
+.sex-in{
+  grid-area:sex;
+}
+.activity-in{
+  grid-area:activity;
+}
+.submit{
+  grid-area:submit;
+}
+.empty{
+  grid-area: empty;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+.bmi-form .submit{
+
+  background-color: var(--btn-color);
+  border-radius: 55px;
+  padding: 16px 20px;color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
 
 
@@ -283,6 +388,7 @@ Respnsive For Mobile Device */
     justify-content: center;
     padding: 0;
   }
+
   .run-container img {
     max-width: 100%;
    
@@ -310,7 +416,14 @@ Respnsive For Mobile Device */
   nav .menu-icon {
     display: block;
   }
+  .bmi-main-container{
+    height: auto;
+    display: grid;
 
+  }
+  .input-form{
+    max-width: 100%;
+  }
   .footer-main {
     flex-direction: column;
     gap: 20px;
