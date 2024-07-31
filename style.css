@@ -241,14 +241,19 @@ main {
   object-fit: cover;
 }
 /* bmi-calculator  Styling */
+.bmi-full-container{
+  max-width: 100%;
+  background-color: var(--secondary-bg); 
+}
 .bmi-main-container{
-  width: 80%;  margin: 0 auto;
+  max-width: 80%;  margin: 0 auto;
   height: 640px;
+
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-bg);
+
   
 }
 .bmi-main-container h1{
@@ -371,11 +376,56 @@ grid-area: height;
 
 
 
-/* .hide{
-  display: none;
-} */
+/* .........Meet Our Team Section............*/
+.met-our-team{
+  background-color:#273648;
+}
+.team-container{
+
+  min-height: 500px;
+  width: 80%;
+  margin: 0 auto;  border: 2px solid white;
+  
+
+}
+.team-details{
+
+}
+.team-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+
+}
+.team-cards  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single-card{
+
+
+  
+}
+.trainer-details{
+  position: relative;
+left: 20px;
+bottom: 50px;
+  z-index: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 
-Respnsive For Mobile Device */
+Respnsive For Mobile Device  📲📱📳*/
 @media screen and (max-width: 576px) {
   .banner-container,
   .habit-cards,
