@@ -378,29 +378,45 @@ grid-area: height;
 
 /* .........Meet Our Team Section............*/
 .met-our-team{
-  background-color:#273648;
+  background-color:black;
+  padding-bottom: 140px;
 }
 .team-container{
 
   min-height: 500px;
   width: 80%;
-  margin: 0 auto;  border: 2px solid white;
+  margin: 0 auto; 
   
 
 }
-.team-details{
+.team-details {
+  padding-top: 100px;
+text-align: center;
+margin-bottom: 95px;
+
+
+}
+.team-details h1{
+  font-size: 3.9rem;
+  margin-bottom: 20px;
+}
+.team-details p{
+  font-size: 1rem;
+  color: var(--secondary-text);
 
 }
 .team-cards{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 15px;
+  gap: 25px;
 
 }
 .team-cards  img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 23px;
+  opacity: .9;
 }
 .single-card{
 
@@ -429,7 +445,7 @@ Respnsive For Mobile Device  📲📱📳*/
 @media screen and (max-width: 576px) {
   .banner-container,
   .habit-cards,
-  .run-container {
+  .run-container,.team-cards {
     display: flex;
     flex-direction: column;
   }
