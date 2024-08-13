@@ -100,25 +100,31 @@ nav {
   width: 464px;
   height: 770px;
 }
+.banner-img{
+  border: 2px solid wheat; position: relative;
+
+}
 /* .banner-img img {
     width: 100%;
   height: 100%;
 
 } */
 .badge {
-  background-color: #3a3a3a;
-  padding: 10px 26px;
+  background: rgba(48, 48, 48, 0.54);
+  padding: 10px 46px;
   border-radius: 10px;
-  width: 100px;
+  width: 150px;
   text-align: center;
-  position: relative;
-  left: 180px;
-  top: 180px;
+  position: absolute;
+  left: 300px;
+  top: 240px;
+  /* left: 180px;
+  top: 180px; */
 }
 
 .play-badge {
-  background-color: #3a3a3a;
-  width: 274px;
+  background: rgba(48, 48, 48, 0.54);
+  width: 250px;
   height: 80px;
   border-radius: 10px;
 
@@ -127,8 +133,10 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* padding: 20px 36px; */
-  top: 740px;
+  
+  top: 610px;
+  left: -100px;
+  
 }
 
 .play-btn {
@@ -429,7 +437,163 @@ left: 20px;
 bottom: 50px;
   z-index: 300;
 }
+/* TESTIMONIAL sECTION STYLING */
 
+
+.testimonial-container{
+  width: 100%;
+  background-color: #1e1e1e;
+
+}
+.testimonial-main{
+  
+width: 80%;margin: 0 auto;
+
+display: flex;
+
+}
+.clients-image{
+  width: 60%;
+  
+
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+  border-radius: 20px;
+  
+
+}
+.img-1{
+  background-color: #E6533C;
+  height: 300px;
+  border-radius: 20px;
+  background-image: url(client3.jpg);
+  background-position:center;
+  background-size: cover;
+ 
+  
+
+grid-column: 1/span 6;
+}
+.img-2{
+  height: 300px;border-radius: 20px;
+
+  background-color: aquamarine;
+  grid-column: 1/span 6;
+
+  background-image: url(client2.jpg);
+  background-position:center;
+  background-size: cover;
+}
+.img-3{
+  height: 600px;border-radius: 20px;
+
+  background-color: green;
+  
+ grid-column: 7/ span 12;
+ grid-row: 1/span 2;
+margin: auto 0;
+background-image: url(client1.jpg);
+background-position:center;
+background-size: cover;
+
+}
+
+.testimonial-main  img{
+  width: 100%;
+ max-height: 100%;
+ object-fit: cover;
+
+}
+.clients-review{
+  width: 40%;
+  display: flex
+;
+flex-direction: column;
+justify-content: center;
+margin-left: 40px;
+}
+.testimonial-main h2{
+  font-size: 4rem;
+  
+}
+
+.testimonial-main p{
+  font-size: 1.5rem;
+  
+
+color: var(--secondary-text);
+margin-bottom: 30px;
+margin-top: 30PX;
+}
+
+
+
+
+
+
+
+/* Footer Section Styling */
+footer{
+  background-color: #3A3A3A;
+  max-width: 100%;
+height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+ 
+}
+.footer-main{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 87px;
+  
+}
+
+.footer-heading{
+  color: #E6533C;
+  font-size: 5.54rem;
+ 
+}
+.footer-col1 p{
+  font-size: 1rem;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 32px;
+}
+.footer-col-title{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 51.8px;
+}
+footer hr{
+  width: 80%;
+  margin: 0 auto;  margin-top: 105px;
+}
+.footer-copyright{
+  text-align: center;
+}
+footer a{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+ 
+
+}
+footer li{
+  margin-top: 25px;
+}
+.footer-copyright h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 105px;
+}
 
 
 
@@ -445,7 +609,7 @@ Respnsive For Mobile Device  📲📱📳*/
 @media screen and (max-width: 576px) {
   .banner-container,
   .habit-cards,
-  .run-container,.team-cards {
+  .run-container,.team-cards, .testimonial-main {
     display: flex;
     flex-direction: column;
   }
@@ -490,6 +654,34 @@ Respnsive For Mobile Device  📲📱📳*/
   .input-form{
     max-width: 100%;
   }
+
+.clients-image , .clients-review{
+  margin: 0;
+  
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: center;
+
+}
+.badge {
+
+  position: absolute;
+  left: 260px;
+  top: 120px;
+
+}
+
+.play-badge {
+
+  position: absolute;
+  
+  top: 400px;
+  left: -100px;
+  
+}
+
+
   .footer-main {
     flex-direction: column;
     gap: 20px;
