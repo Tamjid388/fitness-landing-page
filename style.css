@@ -7,14 +7,11 @@
   padding: 0;
   margin: 0;
   color: #ffffff;
-  /* border: 1px solid red; */
+ 
   
 }
 
-body{
-  /* border: 4px dashed green; */
-  
-}
+
 :root{
   --secondary-text: rgba(255, 255, 255, 0.5);
   --btn-color:#e6533c;
@@ -45,9 +42,27 @@ nav .nav-title {
 }
 nav ul {
   display: flex;
+  border:  1px solid rgba(255, 255, 255, 0.1);
+  /* padding: 15px 20px  15px 20px
+  ; */
+  
+  border-radius: 50px;
+  
+  
+}
+nav ul li:first-child{
+  background-color: #E6533C;
+  border-radius: 40px;
+  padding:15px 35px ;
 }
 nav li {
-  margin-right: 3.9rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 3rem;
+  margin-left: 10px;
+  padding: 15px 20px  15px 20px
+  ;
+ 
 }
 nav li a {
   font-size: 1.3rem;
@@ -59,6 +74,7 @@ nav {
 
   max-width: 80%;
   margin: 0 auto;
+ padding-top: 57px;
 }
 /* ........Banner Section Styling ............*/
 .banner-container {
@@ -145,8 +161,12 @@ nav {
   
   top: 610px;
   left: -100px;
+
+ 
+  
   
 }
+
 
 .play-btn {
   background-color: #e6533c;
@@ -154,8 +174,18 @@ nav {
   width: 50px;
   border: none;
   border-radius: 50%;
+  margin-right: 10px
+  
 }
 #play {
+  display: none;
+ 
+}
+.play-badge  h4 , .badge h4{
+
+  color: var(--secondary-text
+  );
+
 }
 
 /* Main Styling */
@@ -211,14 +241,15 @@ main {
   width: 80%;
   margin: 0 auto;
  
-  /* margin-top: 133px; */
+
   background-color: #273648;
   display: flex;
 
   border-radius: 18px;
 
   background: rgb(34, 34, 34);
-  
+
+  margin-top: 100px;
  
 }
 .run-details {
@@ -319,6 +350,7 @@ justify-content:space-between;
 
 .bmi-form{
 
+
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -343,9 +375,12 @@ td{
   font-weight: 400;
 }
 .bmi-table{
-  /* width: 400px; */
+  
   height: 300px;
  
+}
+table{
+  border-collapse: collapse;
 }
 /* input */
 .input-form{
@@ -672,10 +707,7 @@ Respnsive For Mobile Device  📲📱📳*/
     justify-content: center;
     padding: 0;
   }
-  body{
-    overflow-x: hidden;
-   
-  }
+ 
 
   .run-container img {
     max-width: 100%;
@@ -750,13 +782,17 @@ img {
 .badge {
 
   position: absolute;
-  left: 260px;
+  left: 240px;
   top: 120px;
   width: 100px;
-  font-size: .7rem;
+ 
  padding: 20px;
 
 
+}
+#play {
+  display: block;
+ 
 }
 
 .play-badge {
@@ -769,16 +805,17 @@ img {
 }
 /* responsive bmi */
 .bmi-table{
-  border: 2px dashed rgb(128, 0, 0);
-
+ 
 }
 
 .bmi-main-container{
-  border: 2px dashed green;
+  
 }
 .bmi-form{
   
   max-width: 80%;
+
+  margin-top: 40px;
 
 }
 
