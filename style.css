@@ -12,6 +12,7 @@
   --secondary-text: rgba(255, 255, 255, 0.5);
   --btn-color:#e6533c;
   --secondary-bg:rgb(34, 34, 34);
+  --primary-bg:#1e1e1e;
 }
 .primary-color {
   color: #e6533c;
@@ -56,12 +57,13 @@ nav {
 .banner-container {
   max-width: 80%;
 
-  /* border: 2px solid white; */
+ 
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 58px;
 }
 #shape {
   font-family: "Dancing Script", cursive;
@@ -101,7 +103,7 @@ nav {
   height: 770px;
 }
 .banner-img{
-  border: 2px solid wheat; position: relative;
+  position: relative;
 
 }
 /* .banner-img img {
@@ -209,12 +211,14 @@ main {
   border-radius: 18px;
 
   background: rgb(34, 34, 34);
-  /* padding:  0px 20px; */
+  border: 2px solid beige;
+ 
 }
 .run-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 50px;
 
 
  
@@ -240,15 +244,36 @@ main {
 }
 .run-img {
   padding: 40px 40px;
+ 
 }
 .run-img img {
+  
+ 
+  margin-right: 50px;
   width: 485px;
   height: 415px;
 
   border-radius: 30px;
   object-fit: cover;
+  object-position: 67% 34%;
 }
 /* bmi-calculator  Styling */
+.bmi-heading{
+  background-color: var(--primary-bg);
+  text-align: center;
+  padding: 117px 0;
+}
+.bmi-heading h1{
+  font-size: 4rem;
+  font-weight: 900;
+ 
+}
+.bmi-heading p{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  margin-top: 20px;
+}
 .bmi-full-container{
   max-width: 100%;
   background-color: var(--secondary-bg); 
@@ -597,7 +622,9 @@ footer li{
 
 
 
-
+.hide{
+  display: none;
+}
 
 
 
@@ -629,6 +656,9 @@ Respnsive For Mobile Device  📲📱📳*/
   }
   .run-details button {
     width: 100%;
+  }
+  .run-details {
+    margin-left: 0;
   }
   .habit-card {
     margin-top: 47px;
